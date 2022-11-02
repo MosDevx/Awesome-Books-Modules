@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  border: 5px solid black;
+  background-color: #fff;
+  gap: 30%;
+  padding: 1% 1% 1% 1%;
+}
+
+#logo {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#menu {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  width: 50%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+#time-display {
+  float: right;
+  color: blue;
+  font-weight: 600;
+  font-size: medium;
+}
+
+#awesome {
+  width: 100%;
+  display: flex;
+  padding: 10px 40px 10px 40px;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#book-page {
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+}
+
+#book-page h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#book-list {
+  border: 4px solid black;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  border-collapse: collapse;
+}
+
+#book-list tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+#book-list tr:nth-child(odd) {
+  background-color: rgb(221, 221, 221);
+}
+
+#book-list td:nth-child(3) {
+  text-align: end;
+}
+
+#form-page {
+  width: 100%;
+  padding-top: 10px;
+  align-items: center;
+  padding-left: 35%;
+  height: 100vh;
+}
+
+#form-page h1 {
+  text-align: center;
+  padding-bottom: 10%;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#input-title {
+  border: 4px solid black;
+  margin-bottom: 5%;
+  padding: 3% 2% 3% 2%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#input-author {
+  border: 4px solid black;
+  margin-bottom: 5%;
+  padding: 3% 2% 3% 2%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#new-book-form {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 50%;
+}
+
+#add-button {
+  margin-left: 80%;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  padding: 2% 2% 2% 2%;
+}
+
+#contact-page {
+  width: 100%;
+  padding-top: 10px;
+  height: 100vh;
+}
+
+#contact-page h1 {
+  padding-bottom: 10%;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#contact-page p {
+  padding-left: 25%;
+  padding-bottom: 2%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#contact-page ul {
+  padding-left: 30%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border: 5px solid black;
+  top: 83%;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1% 1% 1% 1%;
+}
+
+.hide {
+  display: none;
+}
