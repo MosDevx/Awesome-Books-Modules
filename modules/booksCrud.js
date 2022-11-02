@@ -32,10 +32,10 @@ const populateOriginalBookList = (books) => {
   });
 };
 
-function storeBooksToStorage() {
+const storeBooksToStorage = () => {
   const booksString = JSON.stringify(Book.getAllBooksArray());
   window.localStorage.setItem('BookData', booksString);
-}
+};
 
 Book.setUpdater(storeBooksToStorage);
 
@@ -46,7 +46,7 @@ function displayOneBook(book) {
   bookList.append(bItem);
 }
 
-export default function displayBooks() {
+const displayBooks = () => {
   window.addEventListener('DOMContentLoaded', () => {
     const booksArray = Book.getAllBooksArray();
     if (booksArray.length) {
@@ -69,4 +69,6 @@ export default function displayBooks() {
 
     newBookForm.reset();
   });
-}
+};
+
+export default displayBooks;
