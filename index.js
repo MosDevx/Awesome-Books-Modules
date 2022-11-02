@@ -1,6 +1,6 @@
 import getCurrentTime from './modules/time.js';
 import spaNavigation from './modules/spa-navigation.js';
-import displayBooks from './modules/Book.js';
+import displayBooks from './modules/booksCrud.js';
 
 const timeDisplay = document.getElementById('time-display');
 
