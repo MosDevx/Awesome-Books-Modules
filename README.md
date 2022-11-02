@@ -1,14 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Wamae-Portfolio
+# Awesome Books
 
-> Portfolio Project To Showcase Projects
+> Project to practice ES6 Modules
 
 
 ## Built With
 
 - Html
 - Css
+- Js
 
 
 
@@ -24,13 +25,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 	Clone this repository
-	git clone https://github.com/MosDevx/Wamae-Portfolio.git
+	git clone https://github.com/MosDevx/Awesome-Books-Modules.git
 
 ### Install
 	Open Html file in preferred browser
 
-### Deployment
-  [Live Demo Link](https://mosdevx.github.io/Wamae-Portfolio/)
+
 
 ## Authors
 
