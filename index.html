@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Awesome Books</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+			<p id="logo">Awesome Books</p>
+			<ul id="menu">
+				<li><a href="#book-page" id="book-link">List</a></li>
+				<li><a href="#form-page" id="form-link">Add new</a></li>
+				<li><a href="#contact-page" id="contact-link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<p id="time-display">Hello There!!</p>
+	<main id="awesome">
+		
+		<section id="book-page">
+			<h1>All Awesome Books</h1>
+			<table id="book-list">
+
+			</table>
+		</section>
+
+		<section class="hide" id="form-page">
+			<form id='new-book-form' action="">
+				<h1 class="form-title">Add a new Book</h1>
+				<input data-any="something" id="input-title" autocomplete="off" type="text" required
+					placeholder="Title" /><br>
+				<input id="input-author" type="text" required autocomplete="off" pattern="[a-zA-Z''']+"
+					placeholder="Author" /><br>
+				<small id="success-small" style="display:none">Book Added!</small>
+				<button id="add-button" type="submit">Add</button>
+			</form>
+		</section>
+
+		<section class="hide" id="contact-page">
+			<h1>Contact Information</h1>
+			<p>Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
+			<ul>
+				<li>Our e-mail: <a href="mailto:mail@gmail.com">mail@gmail.com</a></li>
+				<li>Our Phone number:0043586534422</li>
+				<li>Our address: Streetname 22, 84503 City, Country</li>
+			</ul>
+		</section>
+
+	</main>
+	<footer id="footer">
+		<p>Copyright Footer Goes Here</p>
+	</footer>
+
+	<script src="index.js" type="module" defer></script>
+</body>
+
+</html>
